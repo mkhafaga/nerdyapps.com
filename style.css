@@ -131,50 +131,25 @@ h2 {
 }
 
 .stores {
-  margin: 16px 0 0;
+  margin: 4px 0 0;
 }
 
+/* The official badge image has clear space built in; the negative margin lines its edge up with the card. */
 .store {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 20px 10px 16px;
-  border-radius: 14px;
-  background: #1f1a16;
-  color: #fff;
-  text-decoration: none;
-  box-shadow: 0 4px 0 rgb(0 0 0 / 0.12);
+  display: inline-block;
+  margin-left: -14px;
+  border-radius: 12px;
 }
 
-.store:hover,
-.store:focus-visible {
-  background: #000;
+.store img {
+  display: block;
+  width: 217px;
+  height: auto;
 }
 
-.store span {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.15;
-  font-weight: 700;
-  font-size: 19px;
-}
-
-.store small {
-  font-weight: 500;
-  font-size: 12px;
-  opacity: 0.85;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) .store {
-    background: #fff;
-    color: #1f1a16;
-  }
-
-  :root:not([data-theme='light']) .store:hover,
-  :root:not([data-theme='light']) .store:focus-visible {
-    background: #f0e4d2;
-  }
+.legal {
+  font-size: 13px;
+  margin: 8px 0 0;
 }
 
 .facts {
