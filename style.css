@@ -130,6 +130,53 @@ h2 {
   font-weight: 600;
 }
 
+.stores {
+  margin: 16px 0 0;
+}
+
+.store {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px 10px 16px;
+  border-radius: 14px;
+  background: #1f1a16;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 4px 0 rgb(0 0 0 / 0.12);
+}
+
+.store:hover,
+.store:focus-visible {
+  background: #000;
+}
+
+.store span {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.store small {
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .store {
+    background: #fff;
+    color: #1f1a16;
+  }
+
+  :root:not([data-theme='light']) .store:hover,
+  :root:not([data-theme='light']) .store:focus-visible {
+    background: #f0e4d2;
+  }
+}
+
 .facts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
